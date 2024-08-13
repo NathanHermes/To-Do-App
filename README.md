@@ -17,6 +17,6 @@ The classic To-Do application where a user can write down all the things he want
 - [ ] When closing the browser window the to-do's will be stored and when the User returns, the data will be retrieved
 
 ## Contribuidores 😊
-<a href="https://github.com/NathanHermes/Helpfest/graphs/contributors">
+<a href="https://github.com/NathanHermes/To-Do-App/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=NathanHermes/To-Do-App" />
 </a>
