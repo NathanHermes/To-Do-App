@@ -8,6 +8,7 @@ export const Home = () => {
     event.preventDefault()
 
     setTasks( prevState => [ ...prevState, newTask ] )
+    setNewTask( '' )
   }
 
   return (
@@ -15,15 +16,15 @@ export const Home = () => {
       <h1>To-Do</h1>
 
       <form>
-        <input id='task' type='text' onChange={ event => setNewTask( event.target.value ) } />
+        <input id='task' type='text' value={ newTask } onChange={ event => setNewTask( event.target.value ) } />
         <button type='submit' onClick={ event => handleSubmit( event ) }>Add</button>
       </form>
 
-      <ul id="ToDoList">
+      <section>
         { tasks.map( ( task, index ) => {
-          return <li key={ index }>{ task }</li>
+          return <div key={ index }>{ task }</div>
         } ) }
-      </ul>
+      </section>
     </main>
   )
 }
