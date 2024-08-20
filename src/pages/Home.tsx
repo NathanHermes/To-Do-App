@@ -22,7 +22,10 @@ export const Home = () => {
 
       <section>
         { tasks.map( ( task, index ) => {
-          return <div key={ index }>{ task }</div>
+          return (
+            <div key={ index }>
+              { task }
+            </div> )
         } ) }
       </section>
     </main>
