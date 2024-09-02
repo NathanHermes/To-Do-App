@@ -2317,6 +2317,7 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
+<<<<<<< HEAD
   file:(tailwindcss@3.4.10):
     resolution: {directory: '', type: directory}
     id: 'file:'
@@ -2332,4 +2333,13 @@ packages:
       tailwindcss-animate: 1.0.7(tailwindcss@3.4.10)
     transitivePeerDependencies:
       - tailwindcss
+=======
+  'file:':
+    resolution: {directory: '', type: directory}
+    name: to-do-app
+    dependencies:
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+      react-router-dom: 6.26.0(react-dom@18.3.1)(react@18.3.1)
+>>>>>>> 29ee387 (ci: Update pnpm-lock.yaml)
     dev: false
