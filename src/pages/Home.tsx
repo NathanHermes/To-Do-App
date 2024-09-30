@@ -21,22 +21,27 @@ export const Home = () => {
 
     let _tasks: Task[] = []
     if ( tasksData !== undefined ) {
-      _tasks = tasksData.tasks
+      _tasks = tasksData.tasks;
     }
 
-    _tasks.push( { id: 1, title: 'Test', completed: false } )
-    setTasksData( { tasks: _tasks } )
+    _tasks.push( { id: 1, title: 'Test', completed: false } );
+    setTasksData( { tasks: _tasks } );
 
-    setTitle( '' )
+    setTitle( '' );
   }
 
+  const handleComplete = ( event: React.MouseEvent<HTMLButtonElement>, index: number, task: Task ) => {
+    event.preventDefault();
 
+    task.completed = !task.completed;
+    let _tasks: Task[] = []
+    if ( tasksData !== undefined ) {
+      _tasks = tasksData.tasks;
+    }
 
-  // const handleComplete = ( event: React.MouseEvent<HTMLButtonElement>, index: number, task: ITask ) => {
-  //   event.preventDefault()
-
-
-  // }
+    _tasks[ index ] = task;
+    setTasksData( { tasks: _tasks } );
+  }
 
   return (
     <>
