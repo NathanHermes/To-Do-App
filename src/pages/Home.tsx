@@ -3,9 +3,6 @@ import { CheckIcon, PlusIcon, TrashIcon } from "@radix-ui/react-icons";
 import axios from "axios";
 import clsx from "clsx";
 import { FormEvent, useEffect, useState } from "react";
-
-const LOCAL_STORARE = "tasks";
-
 export const Home = () => {
   const [title, setTitle] = useState("");
   const [tasks, setTasks] = useState<Task[]>([]);
